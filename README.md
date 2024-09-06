@@ -1,12 +1,12 @@
 Welcome to the supplementary repository for the paper
 
-# Evaluating Vision Language Models in Microscopy: A Benchmark for Scientific Image Analysis
+# Beyond Human Vision: The Role of Large Vision Language Models in Microscope Image Analysis
 
-*Author Names*  
-*Domain Expert: Dr. X*  
+*Prateek Verma*, *Minh-Hao Van*, *Xintao Wu*  
+**Domain Expert**: *Prateek Verma, PhD*  
 
 ```
-Link to the paper: will be added later
+Link to the paper: to be added later
 ```
 
 This repository contains instructions for accessing datasets and creating subsets, and ground truths for counting and VQA created by the domain expert among the authors, code files, and some extra evaluations and results.
