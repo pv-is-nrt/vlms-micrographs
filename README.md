@@ -3,7 +3,7 @@ Welcome to the supplementary repository for the paper
 # Beyond Human Vision: The Role of Large Vision Language Models in Microscope Image Analysis
 
 *Prateek Verma*, *Minh-Hao Van*, *Xintao Wu*  
-**Domain Expert**: *Prateek Verma, PhD*  
+**Domain Expert**: *Prateek Verma*  
 
 ```
 Link to the paper: to be added later
