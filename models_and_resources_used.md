@@ -1,0 +1,16 @@
+# Vision Language Models and Computational Resources used
+
+## ChatGPT-4
+OpenAI's GPT-4 has advanced the field of AI with its capacity to process and generate text from combined image and text inputs. As a pre-trained model leveraging Transformer architecture, GPT-4 has surpassed its predecessor, GPT-3.5, across a majority of scholarly and professional assessments, as well as outperforms other leading models in numerous academic measures. Additionally, it exhibits a reduced tendency to produce factually incorrect information, commonly referred to as `hallucinations'.
+
+## Gemini
+Similar to other language models, Gemini models are trained using advanced model optimization to improve scalability based on Transformer-like architecture. The model architecture is not clearly described in. However, the visual encoder draws inspiration from Flamingo, which introduced Perceiver Resampler and cross-attention mechanisms to connect visual and linguistic modalities. The models are trained with multimodal inputs including images, audio, and videos interleaving with text from the start. Like ChatGPT, Google Gemini only allows inference via API or web UI. In this study, we collected results using Gemini Pro-Vision 1.0, henceforth referred to as Gemini. 
+
+## LLaVA
+LLaVA, designed as a multimodal visual language assistant, is adept at following instructions that integrate visual and textual elements. It operates as a conversational agent, engaging users with interactions that closely mimic human dialogue. By incorporating a vision encoder, LLaVA gains the capability to interpret images, enabling it to deliver precise responses to a variety of vision-language challenges. This VLM harnesses the strengths of both the pretrained CLIP for visual encoding and Llama-2 for linguistic processing, connecting the two with a projection layer that translates visual data into language tokens. These tokens, representing both image and text, are then processed by the language model. As a versatile chat assistant, LLaVA is equipped to handle a series of related questions and answers. Employing a `chain of thought' approach, which breaks down complex queries into simpler sub-questions, further augments the model's capabilities.
+
+## SAM
+Segment Anything Model, or SAM (by Meta AI), is a promptable segmentation model that can generate `cut-outs' from any image in accordance with a point, box, or text prompt provided. SAM claims to be capable of zero-shot generalization to unseen objects and images without the requirement of any additional model training, which is why it has been employed to process microscopy images in this study.
+
+## Resources used
+A Hyperplane 8 server powered by 2 Intel Xeon Gold 6248 20 core CPUs and 8 Tesla V100 GPUs running Ubuntu 20.04 was used for most computational tasks. Classification and counting programs finished within a few hours for any model on the full datasets, while segmentation tasks could take up to 24 hours for ~20,000 images. Manual inquiries to ChatGPT, Gemini, LLaVA or SAM were performed through their internet web interfaces and took a varying amount of time depending upon the models availability and speed. A lot of time was spent on repeat inquiries for either prompt tuning or for getting valid responses from GPT-code where it tried to find an appropriate algorithm.
