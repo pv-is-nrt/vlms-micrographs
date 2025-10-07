@@ -52,7 +52,7 @@ Further, some images were manually selected by our domain expert for VQA-T2 (mea
 
 ## Code
 
-Readers and researchers are advised follow the instructions on the VLMs' parent websites to learn how to use and run the models. The specific models that we used, along with the links to their websites, are provided below:
+Readers and researchers are advised follow the instructions on the VLMs' parent websites to learn how to use and run the models. The specific models that we used, along with the links to their websites, for the IEEE BigData Conference paper are provided below:
 
 - LLaVA (llava-v1.5-13b)  
   https://github.com/haotian-liu/LLaVA
@@ -70,6 +70,8 @@ We have provided the code we used to generate our data in the following files:
 - `code_sam_dice_diff.ipynb`  
   This Jupyter notebook demonstrates how to use a downloaded SAM model to segment a directory of images. It also reads the corresponding segmentation ground truth files and calculates Dice and F-1 scores, Jaccard index, and Hausdorff distance for each image. Additionally, difference images are also calculated and can be saved for each image.
 
+For the npj Computational Materials submission, the specific model details are provided in Table 2 in the manuscript. The code files sit in the `npj_computational_materials` directory.
+
 ## Results
 
 The results for classification, segmentation, and counting are fully visualized in the paper and its appendix. Interested users and researchers should be able to reproduce the results by using the code we provided above. Still, the following five files include the numerical data for the results that have been plotted in the manuscript and the appendix. The filenames are (hopefully) self-explanatory.  
@@ -81,6 +83,8 @@ The results for classification, segmentation, and counting are fully visualized 
 
 Additional VQA results that could not be included in the manuscript or the appendix due to their expansive or supportive nature are provided below.
 
+Results in the CSV format are not provided for the newer models used in the npj Computational Materials submission, as the plots are deemed self-explanatory. If you need the raw data, please contact the corresponding author.
+
 ### VQA
 
 The performance of ChatGPT, LLaVA, and Gemini on the VQA tasks on select images from NFFA dataset was evaluated by our domain expert. Quality scores from 0-5 were assigned to each model for each question. The results are provided in the following files:
@@ -89,3 +93,5 @@ The performance of ChatGPT, LLaVA, and Gemini on the VQA tasks on select images 
   This file contains the filenames used for VQA-T1, the outputs of the models, and the quality scores assigned by our domain expert.
 - `vqa_t2_size_results.xlsx`  
   This file contains the filenames used for VQA-T2 (measure size of fibers and particles) and the outputs from the models. Note that since the experiments to measure sizes were less comprehensive than those for measuring counts (due to lack of ability to collect ground truths in large numbers), these were not included in the manuscript.
+
+For the npj Computational Materials submission, the VQA results are provided in the `npj_computational_materials` directory.
